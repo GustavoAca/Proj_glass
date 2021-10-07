@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head >
+    <meta charset="UTF-8"/>
+    <title>Tudo sobre google glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/specs.css"/>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                <img id="icone" src="_imagens/especificacoes.png">
+
+                <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul >
+                    <li onmouseover="mudarFoto('_imagens/home.png')" onmouseout="mudarFoto('_imagens/especificacoes.png')"><a  href="index.html">Home</a></li>
+                    <li onmouseover="mudarFoto('_imagens/especificacoes.png')" onmouseout="mudarFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudarFoto('_imagens/fotos.png') " onmouseout="mudarFoto('_imagens/especificacoes.png')"><a  href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudarFoto('_imagens/multimidia.png')" onmouseout="mudarFoto('_imagens/especificacoes.png')"><a  href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudarFoto('_imagens/contato.png')" onmouseout="mudarFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+            </header>
+
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>  
+                <h3>Glass >&nbsp;Especificações</h3>
+                <h1>Raio-X no Google Glass</h1>
+                <h2>por Gustavo dos Anjos</h2>
+                <h3 class="direita">Atualizado em 30/Setembro/2021</h3>
+            </hgroup>
+        </header>    
+    
+        <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+        <section id="conteudo" >
+            <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa" />
+            <map name="meumapa" > <!-- cria o mapa na imagem -->
+                <area shape="rect" coords=" 196,219,278,258" href="google-glass.html#tela" target="janela" /> <!-- shape-informa o formto da area selecionada/ coords a cordeanda/ href o arquivo que vai ser aberto #chama o id da outra pasta/ target é aonde vai ser puxado -->
+                <area shape="circle" coords="157,243,13" href="google-glass.html#camera" target="janela" /> <!-- em areas circulares as cordenadas são x/y e o raio mostrado como A E L-->
+                <area shape="circle" coords="77,52,13" href="google-glass.html#gadgets" target="janela"/>
+                <area shape="poly" coords="27,147,82,217,84,245,27,169" href="google-glass.html#sensores" target="janela"/> <!-- em ply temos que usar as cordenadas de todos os cantos-->
+            </map>
+            <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+        </section>
+
+    </article>
+</section>
+
+<footer id="rodape">
+    <p>Copyright &copy; 2021  - by Gustavo Dos Anjos<br>
+        <a  href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a> | <a  href="https://github.com/GustavoAca" target="_blank">GitHub</a></p>
+</footer>
+</div>
+</body>
+</html>

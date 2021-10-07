@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tudo sobre google glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="_css/media.css" />    
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+  </head>
+
+  <body>
+    <div id="interface">
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/multimidia.png" />
+
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul>
+            <li
+              onmouseover="mudarFoto('_imagens/home.png')"
+              onmouseout="mudarFoto('_imagens/multimidia.png')"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              onmouseover="mudarFoto('_imagens/especificacoes.png')"
+              onmouseout="mudarFoto('_imagens/multimidia.png')"
+            >
+              <a href="specs.html">Especificações</a>
+            </li>
+            <li
+              onmouseover="mudarFoto('_imagens/fotos.png') "
+              onmouseout="mudarFoto('_imagens/multimidia.png')"
+            >
+              <a href="fotos.html">Fotos</a>
+            </li>
+            <li
+              onmouseover="mudarFoto('_imagens/multimidia.png')"
+              onmouseout="mudarFoto('_imagens/multimidia.png')"
+            >
+              <a href="multimidia.html">Multimídia</a>
+            </li>
+            <li
+              onmouseover="mudarFoto('_imagens/contato.png')"
+              onmouseout="mudarFoto('_imagens/multimidia.png')"
+            >
+              <a href="fale-conosco.html">Fale conosco</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="corpo-full">
+        <article id="noticia-principal">
+          <header id="cabecalho-artigo">
+            <hgroup>
+              <h3>Glass >&nbsp; Multimídia</h3>
+              <h1>Sons e Vídeos</h1>
+              <h2>por Gustavo Dos Anjos</h2>
+              <h3 class="direita">Atualizado em 04/Outubro/2021</h3>
+            </hgroup>
+          </header>
+
+          <div id="tv-radio">
+            <audio id="musica" controls="controls">
+              <source
+                src="../_media/2009-lovers-carvings-bibio.mp3"
+                type="audio/mpeg"
+              />
+              <!-- adicionando audio em formato mp3-->
+              <source
+                src="../_media/07 Lovers' Carvings.m4a"
+                type="audio/x-aac"
+              />
+              <!-- adicionando audio em formato mp4a-->
+              <source
+                src="../_media/2009-lovers-carvings-bibio.oggvorbis.ogg"
+                type="audio/ogg"
+              />
+              <!-- adicionando audio em formato ogg-->
+              Desculpe mas não foi possivel carregar o áudio.
+            </audio>
+
+            <video
+              id="filme"
+              controls="controls"
+              poster="_imagens/video-mini03.jpg"
+            >
+              <!--controls para ver o icone de audio e video-->
+              <source src="../_media/getting-started.mp4" type="video/mp4" />
+              <!-- adicionando video em formato mp4-->
+              <source
+                src="../_media/getting-started.webmsd.webm"
+                type="video/webm"
+              />
+              <!-- adicionando video em formato webm-->
+              <source
+                src="../_media/getting-started.oggtheora.ogv"
+                type="video/ogg"
+              />
+              <!-- adicionando video em formato ogg,mesmo que a extensão seja ogv-->
+              Desculpe mas não foi possivel carregar o vídeo.
+            </video>
+          </div>
+        </article>
+      </section>
+
+      <footer id="rodape">
+        <p>
+          Copyright 2021 &copy; - by Gustavo Dos Anjos<br />
+          <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
+          | <a href="https://github.com/GustavoAca" target="_blank">GitHub</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
